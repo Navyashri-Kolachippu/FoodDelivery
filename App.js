@@ -37,15 +37,165 @@ const styleCard ={
     backgroundColor:"#f0f0f0",
 };
 
+
+const resList=[
+    {
+        "type": "restaurant",
+        "data":{
+        "resname": "Mc Donald's",
+        "ratings": "4.8",
+        "deliveryTime": "1hr 20 mins",
+        "cuisines": ["Fries","Burger","FastFood"],
+        "costforTwo": "40000",
+        "id": 1,
+        "resimage": mcdonaldimage,
+        }
+    },
+    {
+        "type": "restaurant",
+        "data":{
+        "resname": "Namaste",
+        "ratings": "4.5",
+        "deliveryTime": "30 mins",
+        "cuisines": ["Idly","Dosa","South Indian"],
+        "costforTwo": "25000",
+        "id": 2,
+        "resimage": namasteimage,
+        }
+    },
+    {
+        "type": "restaurant",
+        "data":{
+        "resname": "Milano Ice cream",
+        "ratings": "4.2",
+        "deliveryTime": "40 mins",
+        "cuisines": ["Icecream","Gelato","Desserts"],
+        "costforTwo": "60000",
+        "id": 3,
+        "resimage": milanoimage,
+        }
+    },
+    {
+        "type": "restaurant",
+        "data":{
+        "resname": "Harleys Fine Baking",
+        "ratings": "4.8",
+        "deliveryTime": "50 mins",
+        "cuisines": ["Cakes","Desserts","Coffee"],
+        "costforTwo": "60000",
+        "id": 4,
+        "resimage": harleysimage,
+        }
+    },
+    {
+        "type": "restaurant",
+        "data":{
+        "resname": "Blue Tokai Coffee Roasters",
+        "ratings": "4.3",
+        "deliveryTime": "1hr 30 mins",
+        "cuisines": ["Coffee","Tea","Cakes"],
+        "costforTwo": "80000",
+        "id": 5,
+        "resimage": bluetokaiimage,
+        }
+    },
+    {
+        "type": "restaurant",
+        "data":{
+        "resname": "Pizza Hut",
+        "ratings": "4.1",
+        "deliveryTime": "30 mins",
+        "cuisines": ["Pizza","Burger","FastFood"],
+        "costforTwo": "45000",
+        "id": 6,
+        "resimage": pizzahutimage,
+        }
+    },
+    {
+        "type": "restaurant",
+        "data":{
+        "resname": "Rameshwaram Cafe",
+        "ratings": "4.8",
+        "deliveryTime": "30 mins",
+        "cuisines": ["Idli","Dosa","South Indian"],
+        "costforTwo": "60000",
+        "id": 7,
+        "resimage": rameshwaramimage,
+        }
+    },
+    {
+        "type": "restaurant",
+        "data":{
+        "resname": "Corner House",
+        "ratings": "4.8",
+        "deliveryTime": "1hr 40 mins",
+        "cuisines": ["Ice cream","Desserts"],
+        "costforTwo": "70000",
+        "id": 8,
+        "resimage": cornerhouseimage,
+        }
+    },
+    {
+        "type": "restaurant",
+        "data":{
+        "resname": "Asha sweets",
+        "ratings": "4.8",
+        "deliveryTime": "1hr 20 mins",
+        "cuisines": ["Sweets","Jalebi","Savouries"],
+        "costforTwo": "40000",
+        "id": 9,
+        "resimage": ashaimage,
+        }
+    },
+    {
+        "type": "restaurant",
+        "data":{
+        "resname": "Theobroma",
+        "ratings": "4.8",
+        "deliveryTime": "1hr 40 mins",
+        "cuisines": ["Cakes","Desserts"],
+        "costforTwo": "60000",
+        "id": 10,
+        "resimage": theobromaimage,
+        }
+    },
+    {
+        "type": "restaurant",
+        "data":{
+        "resname": "Pasta Street",
+        "ratings": "4.2",
+        "deliveryTime": "30 mins",
+        "cuisines": ["Pasta","Noodles","FastFood"],
+        "costforTwo": "80000",
+        "id": 11,
+        "resimage": pastastreetimage,
+        }
+    },
+    {
+        "type": "restaurant",
+        "data":{
+        "resname": "Paakashala",
+        "ratings": "4.8",
+        "deliveryTime": "1hr 20 mins",
+        "cuisines": ["Idli","Dosa"],
+        "costforTwo": "50000",
+        "id": 12,
+        "resimage": paakashalaimage,
+        }
+    }
+
+];
 const RestaurantCard = (props)=>{
-    const { resname,cuisine,rating,resimage,timeOfDelivery}=props;
+    const {resData}=props;
+    const {resimage,cuisines,resname,ratings,costforTwo,deliveryTime} = resData?.data;
 return (
     <div className="res-card" style={styleCard}>
         <img className="res-img" alt="res-img" src={resimage}/>
         <h3>{resname}</h3>
-        <h4>{cuisine}</h4>
-        <h4>{rating}</h4>
-        <h4>{timeOfDelivery}</h4>
+        <h4>{cuisines.join(", ")}</h4>
+        <h4>{ratings} stars</h4>
+        <h4>Rs.{costforTwo/100} for two.</h4>
+        <h4>{deliveryTime} minutes</h4>
     </div>
 )
 };
@@ -55,67 +205,10 @@ const Body = () =>{
         <div className="body">
             <div className="search"> mysearch </div>
             <div className="res-container">
-                <RestaurantCard  
-                resname="Harleys Fine Baking" 
-                cuisine="Cakes,Macarons" 
-                rating="4.5" timeOfDelivery="34mins" 
-                resimage={harleysimage}/>
-                <RestaurantCard  
-                resname="Namaste" 
-                cuisine="South Indian,Idli" 
-                rating="4.3" timeOfDelivery="15mins" 
-                resimage={namasteimage}/>
-                <RestaurantCard  
-                resname="Corner House" 
-                cuisine="Icecreams,Deserts" 
-                rating="4.9" timeOfDelivery="45mins" 
-                resimage={cornerhouseimage}/>
-                <RestaurantCard  
-                resname="Theobroma" 
-                cuisine="Cakes,Macarons" 
-                rating="4.5" timeOfDelivery="28mins" 
-                resimage={theobromaimage}/>
-                <RestaurantCard  
-                resname="Pasta Street" 
-                cuisine="Pasta,Italian" 
-                rating="4.1" timeOfDelivery="15mins" 
-                resimage={pastastreetimage}/>
-                <RestaurantCard  
-                resname="Blue Tokai" 
-                cuisine="Coffee,Deserrts" 
-                rating="4.6" timeOfDelivery="35mins" 
-                resimage={bluetokaiimage}/>
-                <RestaurantCard  
-                resname="Rameshwaram Cafe" 
-                cuisine="South Indian,Dosa" 
-                rating="4.3" timeOfDelivery="35mins" 
-                resimage={rameshwaramimage}/>
-                <RestaurantCard  
-                resname="Milano" 
-                cuisine="Gelato,Icecream" 
-                rating="4.7" timeOfDelivery="45mins" 
-                resimage={milanoimage}/>
-                 <RestaurantCard  
-                resname="PizzaHut" 
-                cuisine="Pizza,FastFood" 
-                rating="4.0" timeOfDelivery="15mins" 
-                resimage={pizzahutimage}/>
-                <RestaurantCard  
-                resname="Asha Sweets" 
-                cuisine="Sweets Savouries" 
-                rating="4.3" timeOfDelivery="25mins" 
-                resimage={ashaimage}/>
-                <RestaurantCard  
-                resname="Paakashala" 
-                cuisine="South Indian,Idli" 
-                rating="4.3" timeOfDelivery="45mins" 
-                resimage={paakashalaimage}/>
-                <RestaurantCard  
-                resname="Mc Donald's" 
-                cuisine="Burger,Fries,FastFood" 
-                rating="4.3" timeOfDelivery="45mins" 
-                resimage={mcdonaldimage}/>
-
+                {
+                    resList.map((restaurant)=> (
+                    <RestaurantCard key={restaurant.data.id} resData={restaurant}/>))
+                }
             </div>
         </div>
     )
