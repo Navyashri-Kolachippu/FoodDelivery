@@ -16,7 +16,7 @@ export const resList=[
         "type": "restaurant",
         "data":{
         "resname": "Mc Donald's",
-        "ratings": "4.8",
+        "ratings": 4.5,
         "deliveryTime": "1hr 20 mins",
         "cuisines": ["Fries","Burger","FastFood"],
         "costforTwo": "40000",
@@ -28,7 +28,7 @@ export const resList=[
         "type": "restaurant",
         "data":{
         "resname": "Namaste",
-        "ratings": "4.5",
+        "ratings": 4.5,
         "deliveryTime": "30 mins",
         "cuisines": ["Idly","Dosa","South Indian"],
         "costforTwo": "25000",
@@ -40,7 +40,7 @@ export const resList=[
         "type": "restaurant",
         "data":{
         "resname": "Milano Ice cream",
-        "ratings": "4.2",
+        "ratings": 4.2,
         "deliveryTime": "40 mins",
         "cuisines": ["Icecream","Gelato","Desserts"],
         "costforTwo": "60000",
@@ -52,7 +52,7 @@ export const resList=[
         "type": "restaurant",
         "data":{
         "resname": "Harleys Fine Baking",
-        "ratings": "4.8",
+        "ratings": 4.8,
         "deliveryTime": "50 mins",
         "cuisines": ["Cakes","Desserts","Coffee"],
         "costforTwo": "60000",
@@ -64,7 +64,7 @@ export const resList=[
         "type": "restaurant",
         "data":{
         "resname": "Blue Tokai Coffee Roasters",
-        "ratings": "4.3",
+        "ratings": 4.3,
         "deliveryTime": "1hr 30 mins",
         "cuisines": ["Coffee","Tea","Cakes"],
         "costforTwo": "80000",
@@ -76,7 +76,7 @@ export const resList=[
         "type": "restaurant",
         "data":{
         "resname": "Pizza Hut",
-        "ratings": "4.1",
+        "ratings": 4.1,
         "deliveryTime": "30 mins",
         "cuisines": ["Pizza","Burger","FastFood"],
         "costforTwo": "45000",
@@ -88,7 +88,7 @@ export const resList=[
         "type": "restaurant",
         "data":{
         "resname": "Rameshwaram Cafe",
-        "ratings": "4.8",
+        "ratings": 4.8,
         "deliveryTime": "30 mins",
         "cuisines": ["Idli","Dosa","South Indian"],
         "costforTwo": "60000",
@@ -100,7 +100,7 @@ export const resList=[
         "type": "restaurant",
         "data":{
         "resname": "Corner House",
-        "ratings": "4.8",
+        "ratings": 4.8,
         "deliveryTime": "1hr 40 mins",
         "cuisines": ["Ice cream","Desserts"],
         "costforTwo": "70000",
@@ -112,7 +112,7 @@ export const resList=[
         "type": "restaurant",
         "data":{
         "resname": "Asha sweets",
-        "ratings": "4.8",
+        "ratings": 4.8,
         "deliveryTime": "1hr 20 mins",
         "cuisines": ["Sweets","Jalebi","Savouries"],
         "costforTwo": "40000",
@@ -124,7 +124,7 @@ export const resList=[
         "type": "restaurant",
         "data":{
         "resname": "Theobroma",
-        "ratings": "4.8",
+        "ratings": 4.8,
         "deliveryTime": "1hr 40 mins",
         "cuisines": ["Cakes","Desserts"],
         "costforTwo": "60000",
@@ -136,7 +136,7 @@ export const resList=[
         "type": "restaurant",
         "data":{
         "resname": "Pasta Street",
-        "ratings": "4.2",
+        "ratings": 4.2,
         "deliveryTime": "30 mins",
         "cuisines": ["Pasta","Noodles","FastFood"],
         "costforTwo": "80000",
