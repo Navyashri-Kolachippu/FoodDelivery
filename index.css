@@ -76,3 +76,7 @@
     width:75;
     height:25px;
 }
+
+.filter{
+    display:flex;
+}
