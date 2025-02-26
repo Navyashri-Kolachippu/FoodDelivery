@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Body from "./components/Body";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Contact from "./components/Contact";
+import About from "./components/About";
 
 const AppLayout = () =>{
 return(
@@ -16,18 +17,18 @@ return(
     </div>
 )
 };
-const appconfig = createBrowserRouter([
+const appRouter = createBrowserRouter([
     {
         path:"/",
         element:<AppLayout/>,
     },
     {
-        path:"/Contact",
+        path:"/contact",
         element:<Contact/>
         
     },
     {
-        path:"/About",
+        path:"/about",
         element:<About/>
         
     },
@@ -35,4 +36,4 @@ const appconfig = createBrowserRouter([
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={appconfig} />);
+root.render(<RouterProvider router={appRouter} />);
