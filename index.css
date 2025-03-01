@@ -80,3 +80,34 @@
 .filter{
     display:flex;
 }
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px; /* Adds space between text & image */
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Optional: Separates items */
+}
+
+.menu-details {
+    display: flex;
+    flex-direction: column; /* Stacks name above price */
+}
+
+.dish-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between name & price */
+}
+
+.dish-price {
+    font-size: 14px;
+    color: #666; /* Lighter color for price */
+}
+
+.dish-img {
+    width: 60px; /* Adjust size */
+    height: auto;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}

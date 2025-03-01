@@ -29,9 +29,13 @@ const RestaurantMenu = ()=>{
             <h3>Menu</h3>
             <ul> 
                 {items.map((item)=> (
-                <li key={item.dishName}>
-                    {item.dishName} - Rs.{item.price}
-                </li>
+               <li key={item.dishName} className="menu-item">
+               <div className="menu-details">
+                   <h4 className="dish-name">{item.dishName}</h4>
+                   <p className="dish-price">Rs. {item.price}</p>
+               </div>
+               <img className="dish-img" alt={item.dishName} src={item.dishImage} />
+               </li>
                 ))}
             </ul>
         </div>
