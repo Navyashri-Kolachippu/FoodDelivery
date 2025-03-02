@@ -111,3 +111,9 @@
     height: auto;
     border-radius: 8px; /* Optional: Adds rounded corners */
 }
+
+.restaurant-link {
+    text-decoration: none;  /* Removes underline */
+    color: inherit;         /* Keeps the default text color */
+    display: block;         /* Makes the whole card clickable */
+}

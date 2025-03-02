@@ -18,7 +18,6 @@ const Body = () =>{
         const json = await data.json();
         setListOfRestaurants(json);
         setFilteredListOfRestaurants(json);
-        console.log(json);
     };
 
     return (listOfResturants.length == 0)?  <Shimmer /> : (
@@ -40,14 +39,15 @@ const Body = () =>{
                 <button className="filter-btn"
                 onClick={()=>{
                    var filteredlist = listOfResturants.filter((res)=>res.data.ratings > 4.5);
-                   setListOfRestaurants(filteredlist);
+                   setFilteredListOfRestaurants(filteredlist);
                 }}>
                 Top Rated Restaurants</button> 
             </div>
             <div className="res-container">
                 {
                     filteredListOfResturants.map((restaurant) => (
-                        <Link  key={restaurant.data.id} to={"/restaurantmenu/"+restaurant.data.id}><RestaurantCard resData={restaurant} />;
+                        <Link  key={restaurant.data.id} to={"/restaurantmenu/"+restaurant.data.id} className="restaurant-link">
+                            <RestaurantCard resData={restaurant} />;
                         </Link> 
                     ))
                 }
