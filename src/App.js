@@ -11,6 +11,7 @@ import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 
 const AppLayout = () =>{
+    console.log("applayout")
 return(
     <div className="app">
         <Header />
@@ -25,7 +26,7 @@ const appRouter = createBrowserRouter([
         element:<AppLayout/>,
         children:[
             {
-                path:"/",
+                index:true,
                 element:<Body/>,
             },
             {
