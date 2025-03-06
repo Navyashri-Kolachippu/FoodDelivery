@@ -1,7 +1,7 @@
 import UserClass from "./UserClass";
 import User from "./User";
-import { Component } from "React";
-class About extends Component{
+import React from "react";
+class About extends React.Component{
     constructor(props)
     {
         super(props);
