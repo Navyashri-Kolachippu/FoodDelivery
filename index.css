@@ -117,3 +117,9 @@
     color: inherit;         /* Keeps the default text color */
     display: block;         /* Makes the whole card clickable */
 }
+
+.user-data
+{
+    padding:10px;
+    border:solid black 1px;
+}
