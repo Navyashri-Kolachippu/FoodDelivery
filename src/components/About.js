@@ -18,7 +18,7 @@ class About extends React.Component{
        return( <div>
             <h1>About Us:</h1>
             <h2>Welcome to Food delivery app.</h2>
-            <User name="Varchas" location="Bangalore"/>
+            {/* <User name="Varchas" location="Bangalore"/> */}
             <UserClass name="Navya" location="Bangalore"/>
         </div>
        );
