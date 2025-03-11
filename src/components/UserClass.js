@@ -27,6 +27,16 @@ class UserClass extends Component
        });
        console.log("Child component mounted");
     }
+
+    componentDidUpdate()
+    {
+        console.log("Child component updated");
+    }
+
+    componentWillUnmount()
+    {
+        console.log("Child component unmounted");
+    }
     render()
     {
         console.log("Child component rendered");
