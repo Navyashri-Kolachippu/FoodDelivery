@@ -7,19 +7,19 @@ const Header =()=>{
     const [btnName,setbtnName]=useState("Login");
     const online = useOnline();
     return(
-        <div className="header">
+        <div className="flex justify-between shadow-lg">
             <div className="logo-container">
-                <img className="logo" src={logoimage}/>
+                <img className="w-24" src={logoimage}/>
             </div>
-            <div className="nav-items">
-                <ul>
-                    <li>Online {online?"✔":"🔴"}</li>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About Us</Link></li>
-                    <li><Link to="/contact">Contact Us</Link></li>
-                    <li><Link to="/grocery">Grocery</Link></li>
-                    <li>Cart</li>
-                    <li>
+            <div className="flex items-centers">
+                <ul className="flex p-4 m-4">
+                    <li className="px-4">Online {online?"✔":"🔴"}</li>
+                    <li className="px-4"><Link to="/">Home</Link></li>
+                    <li className="px-4"><Link to="/about">About Us</Link></li>
+                    <li className="px-4"><Link to="/contact">Contact Us</Link></li>
+                    <li className="px-4"><Link to="/grocery">Grocery</Link></li>
+                    <li className="px-4">Cart</li>
+                    <li className="px-4">
                         <button className="btnLogin"
                             onClick={()=>
                             {

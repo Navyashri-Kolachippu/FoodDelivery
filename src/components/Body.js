@@ -30,13 +30,12 @@ const Body = () =>{
         }
     return (listOfResturants.length == 0)?  <Shimmer /> : (
         <div className="body">
-            <div className="filter"> 
-                <div className="search">
-                    <input type="text" className="search-box" value={searchText} 
+            <div className="filter flex"> 
+                <div className="m-4 p-4">
+                    <input type="text" className="search-box border p-1 border-black" value={searchText} 
                         onChange={(e) => setSearchText(e.target.value)} />
-                    <button onClick={()=>
+                    <button className="px-4 py-1 m-4 bg-green-100 rounded-lg" onClick={()=>
                     {
-                        console.log(searchText);
                         const filteredRes=listOfResturants.filter((res) =>
                             res?.data?.resname?.toLowerCase().includes(searchText.toLowerCase())
                         );
@@ -44,18 +43,20 @@ const Body = () =>{
                     }
                     }>Search</button>
                 </div>
-                <button className="filter-btn"
+                <div className="m-4 p-4 flex items-center">
+                <button className="px-4 py-1 m-4 bg-gray-100 rounded-lg"
                 onClick={()=>{
                    var filteredlist = listOfResturants.filter((res)=>res.data.ratings > 4.5);
                    setFilteredListOfRestaurants(filteredlist);
                 }}>
                 Top Rated Restaurants</button> 
+                </div>
             </div>
-            <div className="res-container">
+            <div className="flex gap-4 flex-wrap items-stretch">
                 {
                     filteredListOfResturants.map((restaurant) => (
                         <Link  key={restaurant.data.id} to={"/restaurantmenu/"+restaurant.data.id} className="restaurant-link">
-                            <RestaurantCard resData={restaurant} />;
+                            <RestaurantCard resData={restaurant} />
                         </Link> 
                     ))
                 }
