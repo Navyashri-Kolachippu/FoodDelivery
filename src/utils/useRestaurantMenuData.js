@@ -10,7 +10,6 @@ const useRestaurantMenuData=(resId)=>{
         const data=await fetch("http://localhost:5220/api/FoodDelivery/GetMenu?restaurantId="+resId);
         const json=await data.json();
         setmenudata(json);
-        console.log(json);
     }
     return menudata;
 }
