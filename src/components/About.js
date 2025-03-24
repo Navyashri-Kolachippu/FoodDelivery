@@ -19,7 +19,9 @@ class About extends React.Component{
        return( <div>
             <h1>About Us:</h1>
             <UserContext.Consumer>
-                {({loggedInUser})=><h1>{loggedInUser}</h1>}
+                {({loggedInUser})=>(
+                    <h1 className="font-semibold">{loggedInUser}</h1>
+                    )}
             </UserContext.Consumer>
             <h2>Welcome to Food delivery app.</h2>
             {/* <User name="Varchas" location="Bangalore"/> */}
