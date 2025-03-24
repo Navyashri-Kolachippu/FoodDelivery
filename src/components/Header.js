@@ -7,7 +7,7 @@ import UserContext from "../utils/UserContext";
 const Header =()=>{
     const [btnName,setbtnName]=useState("Login");
     const online = useOnline();
-    const userName=useContext(UserContext);
+    const {loggedInUser}=useContext(UserContext);
     return(
         <div className="flex justify-between shadow-lg">
             <div className="logo-container">
@@ -32,7 +32,7 @@ const Header =()=>{
                           {btnName}
                         </button>
                     </li>
-                    <li className="px-4">{userName.loggedInUser}</li>
+                    <li className="px-4">{loggedInUser}</li>
                 </ul>
             </div>
         </div>
