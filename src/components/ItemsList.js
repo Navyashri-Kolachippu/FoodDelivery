@@ -1,8 +1,11 @@
 const ItemsList=({items})=>{
-    console.log(items);
+
+    const handleItem=()=>{
+
+    }
+
     return(
     <div>
-       
     {items.map(item=><div key={item.dishName} className="p-2 m-2 border-b-2 border-gray-200 flex justify-between items-center">
         <div>
         <span className="text-pretty font-semibold">{item.dishName}:</span>
@@ -10,7 +13,9 @@ const ItemsList=({items})=>{
         </div>
         <div className="flex flex-col items-center">
             <div className="absolute">
-            <button className="mx-20 my-20 p-2 bg-black text-white shadow-lg rounded-lg">Add +</button>
+            <button className="mx-20 my-20 p-2 bg-black text-white shadow-lg rounded-lg"
+            onClick={handleItem}>
+                Add +</button>
             </div>
         <img className="w-32 h-32 object-cover rounded-lg" alt={item.dishName} src={item.dishImage} />
         </div>
