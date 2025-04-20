@@ -25,7 +25,7 @@ const Header =()=>{
                     <li className="px-4"><Link to="/about">About Us</Link></li>
                     <li className="px-4"><Link to="/contact">Contact Us</Link></li>
                     <li className="px-4"><Link to="/grocery">Grocery</Link></li>
-                    <li className="px-4 font-bold text-lg">Cart - ({cartItems.length} -Items)</li>
+                    <li className="px-4 font-bold text-lg"><Link to="/cart">Cart - ({cartItems.length} -Items)</Link></li>
                     <li className="px-4">
                         <button className="btnLogin"
                             onClick={()=>
