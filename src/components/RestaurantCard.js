@@ -8,7 +8,7 @@
       
     const {resimage,cuisines,resname,ratings,costforTwo,deliveryTime} = resData?.data;
 return (
-    <div className="w-[250px] p-4 shadow-lg rounded-lg flex flex-col h-full bg-gray-200 hover:bg-gray-300">
+    <div data-testid="resCard" className="w-[250px] p-4 shadow-lg rounded-lg flex flex-col h-full bg-gray-200 hover:bg-gray-300">
         <img className="w-50 h-32 object-cover rounded-lg" alt="res-img" src={resimage}/>
         <h3 className="font-bold py-4 text-lg">{resname}</h3>
         <h4>{cuisines.join(", ")}</h4>

@@ -1,0 +1,203 @@
+[
+    {
+        "type": "restaurant",
+        "data": {
+            "id": 1,
+            "resname": "Mc Donald's",
+            "ratings": 4,
+            "deliveryTime": "1hr 20 mins",
+            "cuisines": [
+                "Fries",
+                "Burger",
+                "FastFood"
+            ],
+            "costforTwo": "40000",
+            "resimage": "http://localhost:5220/images/mcdonald.jpg",
+            "isPromoted": false
+        }
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "id": 2,
+            "resname": "Namaste",
+            "ratings": 4.5,
+            "deliveryTime": "20 mins",
+            "cuisines": [
+                "Idly",
+                "3",
+                "South Indian"
+            ],
+            "costforTwo": "20000",
+            "resimage": "http://localhost:5220/images/namaste.jpg",
+            "isPromoted": false
+        }
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "id": 3,
+            "resname": "Pasta Street",
+            "ratings": 4.3,
+            "deliveryTime": "40 mins",
+            "cuisines": [
+                "Pasta",
+                "Pizza",
+                "FastFood"
+            ],
+            "costforTwo": "40000",
+            "resimage": "http://localhost:5220/images/pastastreet.jpg",
+            "isPromoted": false
+        }
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "id": 4,
+            "resname": "Harleys Fine Baking",
+            "ratings": 4.8,
+            "deliveryTime": "40 mins",
+            "cuisines": [
+                "Cakes",
+                "Desserts",
+                "Coffee"
+            ],
+            "costforTwo": "60000",
+            "resimage": "http://localhost:5220/images/harleys.jpg",
+            "isPromoted": false
+        }
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "id": 5,
+            "resname": "Milano Ice Creams",
+            "ratings": 4.7,
+            "deliveryTime": "1hr 20 mins",
+            "cuisines": [
+                "Icecream",
+                "Gelato",
+                "Desserts"
+            ],
+            "costforTwo": "70000",
+            "resimage": "http://localhost:5220/images/milano.jpg",
+            "isPromoted": true
+        }
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "id": 6,
+            "resname": "Rameshwaram Cafe",
+            "ratings": 4.5,
+            "deliveryTime": "60 mins",
+            "cuisines": [
+                "Idly",
+                "3",
+                "South Indian"
+            ],
+            "costforTwo": "50000",
+            "resimage": "http://localhost:5220/images/rameshwaram.jpg",
+            "isPromoted": false
+        }
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "id": 7,
+            "resname": "Paakashala",
+            "ratings": 4.7,
+            "deliveryTime": "1hr 20 mins",
+            "cuisines": [
+                "Idli",
+                "3"
+            ],
+            "costforTwo": "40000",
+            "resimage": "http://localhost:5220/images/paakashala.jpg",
+            "isPromoted": false
+        }
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "id": 8,
+            "resname": "Theobroma",
+            "ratings": 4.5,
+            "deliveryTime": "1hr 30 mins",
+            "cuisines": [
+                "Cakes",
+                "Desserts"
+            ],
+            "costforTwo": "80000",
+            "resimage": "http://localhost:5220/images/theobroma.jpg",
+            "isPromoted": false
+        }
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "id": 9,
+            "resname": "Asha Sweets",
+            "ratings": 4.7,
+            "deliveryTime": "20 mins",
+            "cuisines": [
+                "Sweets",
+                "Jalebi",
+                "Savouries"
+            ],
+            "costforTwo": "50000",
+            "resimage": "http://localhost:5220/images/ashasweets.jpg",
+            "isPromoted": true
+        }
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "id": 10,
+            "resname": "Corner House",
+            "ratings": 4.8,
+            "deliveryTime": "1hr 10 mins",
+            "cuisines": [
+                "IceCream",
+                "Desserts"
+            ],
+            "costforTwo": "60000",
+            "resimage": "http://localhost:5220/images/cornerhouse.jpg",
+            "isPromoted": false
+        }
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "id": 11,
+            "resname": "Pizza Hut",
+            "ratings": 4.2,
+            "deliveryTime": "1hr 10 mins",
+            "cuisines": [
+                "Pizza",
+                "Burger",
+                "FastFood"
+            ],
+            "costforTwo": "40000",
+            "resimage": "http://localhost:5220/images/pizzahut.jpg",
+            "isPromoted": false
+        }
+    },
+    {
+        "type": "restaurant",
+        "data": {
+            "id": 12,
+            "resname": "Blue Tokai Coffee Roasters",
+            "ratings": 4.5,
+            "deliveryTime": "1hr 30 mins",
+            "cuisines": [
+                "Coffee",
+                "Tea",
+                "Cakes"
+            ],
+            "costforTwo": "80000",
+            "resimage": "http://localhost:5220/images/bluetokai.jpg",
+            "isPromoted": true
+        }
+    }
+]
