@@ -4,6 +4,7 @@ import ItemsList from "./ItemsList";
 const RestaurantCategory=({data,showItems,setshowIndex})=>
 {
 
+    console.log(data);
     const handleClick=()=>
     {
         setshowIndex();

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import logoimage from "../../assets/images/logo.jpg"
+import logoimage from "../assets/images/logo.jpg"
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
 import UserContext from "../utils/UserContext";
@@ -11,7 +11,7 @@ const Header =()=>{
     const {loggedInUser}=useContext(UserContext);
     //Subscribe to the store using selector
     const cartItems =useSelector((store)=>store.cart.items);
-    console.log(cartItems);
+    //console.log(cartItems);
 
     return(
         <div className="flex justify-between shadow-lg">

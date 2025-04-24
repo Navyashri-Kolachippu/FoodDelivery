@@ -10,7 +10,9 @@ const ItemsList=({items})=>{
 
     return(
     <div>
-    {items.map(item=><div key={item.dishName} className="p-2 m-2 border-b-2 border-gray-200 flex justify-between items-center">
+    {
+    items.map((item)=>(
+    <div key={item.dishId} className="p-2 m-2 border-b-2 border-gray-200 flex justify-between items-center">
         <div>
         <span className="text-pretty font-semibold">{item.dishName}:</span>
         <span className="p-2 text-black-600"> Rs-{item.price}</span>
@@ -23,9 +25,8 @@ const ItemsList=({items})=>{
             </div>
         <img className="w-32 h-32 object-cover rounded-lg" alt={item.dishName} src={item.dishImage} />
         </div>
+    </div>
+    ))}
     </div>)}
-
-    </div>)
-}
 
 export default ItemsList;

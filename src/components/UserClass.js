@@ -15,31 +15,31 @@ class UserClass extends Component
             }
         }
 
-        console.log("Child component constructor");
+        //console.log("Child component constructor");
     }
 
     async componentDidMount(){
        const data = await fetch("https://api.github.com/users/Navyashri-Kolachippu");
        const json = await data.json();
-       console.log(json); 
+       //console.log(json); 
        this.setState({
         userInfo:json,
        });
-       console.log("Child component mounted");
+       //console.log("Child component mounted");
     }
 
     componentDidUpdate()
     {
-        console.log("Child component updated");
+        //console.log("Child component updated");
     }
 
     componentWillUnmount()
     {
-        console.log("Child component unmounted");
+        //console.log("Child component unmounted");
     }
     render()
     {
-        console.log("Child component rendered");
+        //console.log("Child component rendered");
         const {name,location} =this.state.userInfo;
         return(
             <div className="user-data">

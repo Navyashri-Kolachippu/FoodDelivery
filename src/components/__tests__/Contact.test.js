@@ -23,7 +23,7 @@ test("Should load button in the component",()=>{
     expect(inputName).toBeInTheDocument();
  });
 
- it("Should load 2 input boxes in the component",()=>{
+ test("Should load 2 input boxes in the component",()=>{
     render(<Contact/>);
  
     const inputBoxes=screen.getAllByRole("textbox")
