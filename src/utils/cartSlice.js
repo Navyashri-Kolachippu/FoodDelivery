@@ -7,7 +7,18 @@ const cartSlice=createSlice({
    },
    reducers:{
     addItem:(state,action)=>{
-        state.items.push(action.payload);
+        const newItem = action.payload;
+        //console.log(newItem);
+        const existingItem=state.items.find((item)=>item.dishId==newItem.dishId);
+        if(existingItem)
+        {
+            existingItem.count=existingItem.count+1;
+        }
+        else
+        {
+            newItem.count=1;
+            state.items.push(newItem);
+        }
     },
     removeItem:(state,action)=>{
         state.items=state.items.filter(item=>item.dishName!== action.payload);
