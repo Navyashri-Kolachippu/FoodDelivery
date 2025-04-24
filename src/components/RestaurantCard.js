@@ -1,11 +1,11 @@
-import {resList } from "../utils/mockData";
-
-const styleCard ={
-    backgroundColor:"#f0f0f0",
-};
 
  const RestaurantCard = (props)=>{
     const {resData}=props;
+    //console.log(props);
+    if (!resData?.data) {
+        return <div className="p-4 text-red-500">Invalid restaurant data</div>;
+      }
+      
     const {resimage,cuisines,resname,ratings,costforTwo,deliveryTime} = resData?.data;
 return (
     <div className="w-[250px] p-4 shadow-lg rounded-lg flex flex-col h-full bg-gray-200 hover:bg-gray-300">

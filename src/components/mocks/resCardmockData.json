@@ -1,0 +1,14 @@
+{
+    "type": "restaurant",
+    "data": {
+      "id": 5,
+      "resname": "Milano Ice Creams",
+      "ratings": 4.7,
+      "deliveryTime": "1hr 20 mins",
+      "cuisines": ["Icecream", "Gelato", "Desserts"],
+      "costforTwo": "70000",
+      "resimage": "http://localhost:5220/images/milano.jpg",
+      "isPromoted": true
+    }
+  }
+  
