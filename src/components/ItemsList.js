@@ -12,7 +12,7 @@ const ItemsList=({items})=>{
     <div>
     {
     items.map((item)=>(
-    <div key={item.dishId} className="p-2 m-2 border-b-2 border-gray-200 flex justify-between items-center">
+    <div key={item.dishId} data-testid="menuItem" className="p-2 m-2 border-b-2 border-gray-200 flex justify-between items-center">
         <div>
         <span className="text-pretty font-semibold">{item.dishName}:</span>
         <span className="p-2 text-black-600"> Rs-{item.price}</span>

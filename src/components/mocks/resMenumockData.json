@@ -1,0 +1,48 @@
+{
+    "restaurantId": 4,
+    "restaurantName": "Harleys Fine Baking",
+    "cuisines": [
+        "Cakes",
+        "Macarons",
+        "Coffee"
+    ],
+    "costForTwo": "500 for two",
+    "categories": [
+        {
+            "categoryName": "Baked Items",
+            "categoryId": 7,
+            "items": [
+                {
+                    "dishName": "Chocolate Russian Cake",
+                    "isVeg": true,
+                    "dishId": 10,
+                    "price": 150,
+                    "dishImage": "http://localhost:5220/images/russiacake.jpg",
+                    "count": 0
+                },
+                {
+                    "dishName": "Macaroon",
+                    "isVeg": true,
+                    "dishId": 11,
+                    "price": 80,
+                    "dishImage": "http://localhost:5220/images/macaroon.jpg",
+                    "count": 0
+                }
+            ]
+        },
+        {
+            "categoryName": "Beverages",
+            "categoryId": 8,
+            "items": [
+                {
+                    "dishName": "Cappuchino",
+                    "isVeg": true,
+                    "dishId": 12,
+                    "price": 180,
+                    "dishImage": "http://localhost:5220/images/capuccino.jpg",
+                    "count": 0
+                }
+            ]
+        }
+    ]
+}
