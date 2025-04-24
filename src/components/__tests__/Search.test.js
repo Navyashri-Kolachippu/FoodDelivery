@@ -38,7 +38,7 @@ it("Should load Search button in Body component",async()=>{
 
 });
 
-it("Should Search the items on input",async()=>{
+it("Should Search the items on input on click of button",async()=>{
   
     await act(async()=>render(
     <BrowserRouter>
@@ -58,3 +58,20 @@ it("Should Search the items on input",async()=>{
     expect(cardsAfterSearch.length).toBe(2);
 
 });
+
+it("Should filter the top rated restaurants on click of top rated button",async()=>{
+
+    await act(async()=>render(
+        <BrowserRouter>
+        <Body/>
+        </BrowserRouter>));
+    
+    const topRatedBtn = screen.getByRole("button",{name:"Top Rated Restaurants"});
+    const beforeTopRatedClick = screen.getAllByTestId("resCard");
+    expect(beforeTopRatedClick.length).toBe(12);
+
+    fireEvent.click(topRatedBtn);
+    const afterTopRatedClick=screen.getAllByTestId("resCard");
+    expect(afterTopRatedClick.length).toBe(5);
+
+})
